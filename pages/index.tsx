@@ -188,6 +188,7 @@ const Home: NextPage = () => {
           Some or our experienced teachers
         </h2>
         <ProfileSlider />
+        {/* hy */}
       </section>
     </div>
   )
