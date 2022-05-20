@@ -1,0 +1,30 @@
+import Image from 'next/image'
+import React from 'react'
+import Link from 'next/link'
+
+type Props = {}
+
+const Nav = (props: Props) => {
+  return (
+    <div className='flex justify-between items-center lg:pb-10'>
+      <Image src='/logo.png' height={42} width={305} alt='logo' />
+
+      <div>
+        {['About us', 'Services', 'Teachers'].map(Navlink => (
+          <Link href='' key={Navlink}>
+            <a className='ml-5'>{Navlink} </a>
+          </Link>
+        ))}
+
+        <button className='bg-[#42B9D1] button p-2 px-5 tracking-wide text-white rounded-md ml-5 mr-2'>
+          SignUp
+        </button>
+        <button className='bg-[#42B9D1]/20 text-[#42B9D1] border-2 border-[#42B9D1] button p-2 px-5 tracking-wide  rounded-md'>
+          Login
+        </button>
+      </div>
+    </div>
+  )
+}
+
+export default Nav
