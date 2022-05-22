@@ -36,7 +36,7 @@ function ProfileSlider({}: Props) {
             />
             <h3 className='font-bold lg:mt-4'>{Teacher.name}</h3>
             <p>{Teacher.role}</p>
-            <figcaption className='text-xs text-center'>
+            <figcaption className='text-[8px] text-center'>
               {Teacher.text}{' '}
             </figcaption>
           </figure>
