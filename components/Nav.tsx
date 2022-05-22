@@ -6,7 +6,7 @@ type Props = {}
 
 const Nav = (props: Props) => {
   return (
-    <div className='flex justify-between items-center lg:pb-10'>
+    <div className='flex justify-between items-center lg:pb-10 lg:px-10'>
       <Image src='/logo.png' height={42} width={305} alt='logo' />
 
       <div>
@@ -16,7 +16,7 @@ const Nav = (props: Props) => {
           </Link>
         ))}
 
-        <button className='bg-[#42B9D1] button p-2 px-5 tracking-wide text-white rounded-md ml-5 mr-2'>
+        <button className='bg-[#42B9D1] button  p-2 px-5 tracking-wide text-white rounded-md ml-16 mr-2'>
           SignUp
         </button>
         <button className='bg-[#42B9D1]/20 text-[#42B9D1] border-2 border-[#42B9D1] button p-2 px-5 tracking-wide  rounded-md'>

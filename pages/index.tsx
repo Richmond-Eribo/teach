@@ -1,5 +1,6 @@
 import type {NextPage} from 'next'
 import Image from 'next/image'
+import Footer from '../components/Footer'
 import LandingPageSlide from '../components/LandingPageSlide'
 import Nav from '../components/Nav'
 import ProfileSlider from '../components/ProfileSlider'
@@ -7,8 +8,8 @@ import TextWrapper from '../components/TextWrapper'
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-[#42B9D1]/5'>
-      <section className='h-screen bg-[#D1644D]/5 lg:px-20 lg:pt-10'>
+    <div className=''>
+      <section className='h-screen bg-[#D1644D]/5 lg:px-10 lg:pt-10'>
         <Nav />
         <LandingPageSlide />
       </section>
@@ -107,7 +108,7 @@ const Home: NextPage = () => {
         <div className='flex justify-around'>
           <div>
             <Image
-              src='/classroom.png'
+              src='/services.png'
               height={602 / 1.4}
               width={640 / 1.4}
               alt='classroom'
@@ -190,6 +191,124 @@ const Home: NextPage = () => {
         <ProfileSlider />
         {/* hy */}
       </section>
+
+      <section className='lg:px-36 lg:py-20 relative h-[440px] '>
+        <Image
+          layout='fill'
+          src='/uni.png'
+          alt='Profile Image'
+          // className='rounded-full'
+        />
+      </section>
+
+      <section className='lg:px-36 lg:py-20'>
+        <h2 className='font-bold lg:text-5xl text-center  text-text-dark mb-20'>
+          University Admission Assist
+        </h2>
+
+        <div className='flex text-text-light justify-around'>
+          <TextWrapper width={400}>
+            <p className='mb-5'>
+              We are UK based outstanding teachers providing 1st class tuition
+              to students all over the world to help them build their future.
+            </p>
+
+            <h4 className='font-bold'>Target segments</h4>
+            <ol className='mb-5'>
+              <li>We started locally with UK and diaspora children.</li>
+              <li>
+                We have now expanded internationally to children of both high
+                and low income parents abroad who want to invest on their
+                children&apos;s education
+              </li>
+            </ol>
+
+            <h4 className='font-bold'>Other areas</h4>
+            <p>
+              We help students in developing countries gain admission to
+              universities in the following countries:
+            </p>
+          </TextWrapper>
+
+          <TextWrapper width={300}>
+            <h4 className='font-bold'>Tuition free countries</h4>
+            <ol className='list-disc mb-5 list-inside'>
+              <li>Germany</li>
+              <li>Denmark</li>
+              <li>Austria</li>
+              <li>Norway</li>
+              <li>Sweden</li>
+              <li>and many more</li>
+            </ol>
+
+            <h4 className='font-bold'>Tuition free countries</h4>
+            <ol className='list-disc list-inside'>
+              <li>UK</li>
+              <li>United States of America</li>
+              <li>Canada</li>
+              <li>Australia</li>
+            </ol>
+          </TextWrapper>
+        </div>
+      </section>
+
+      <section className='text-center flex flex-col items-center lg:px-36 lg:py-20'>
+        <h2 className='font-bold lg:text-5xl   text-text-dark mb-10'>
+          Get In Touch
+        </h2>
+        <h2 className='font-bold lg:text-2xl'>Opening Hours</h2>
+        <h2 className='font-bold lg:text-2xl mb-10'>07:30 AM - 05:00 PM</h2>
+
+        <div className='flex flex-col justify-between h-[200px]'>
+          <div>
+            <h4 className='font-bold'>Email</h4>
+            <p>admin@academictutors.org.uk</p>
+          </div>
+          <div>
+            <h4 className='font-bold'>Phone</h4>
+            <p>+44 173 377 0106</p>
+          </div>
+          <div>
+            <h4 className='font-bold'>Address</h4>
+            <p>
+              Academic Tutors Limited Whittlesey, Peterborough PE7, United
+              Kingdom
+            </p>
+          </div>
+        </div>
+
+        <form className='grid grid-cols-2 gap-2 my-5 lg:w-[700px] lg:h-[200px]'>
+          <input
+            type='text'
+            placeholder='Name'
+            className='border border-[#C4C4C4] rounded-md p-1 px-5 focus:border-blue-500 outline-blue-400'
+          />
+          <input
+            type='email'
+            placeholder='Email'
+            className='border border-[#C4C4C4] rounded-md p-1 px-5 outline-blue-400'
+          />
+          <textarea
+            name='message'
+            placeholder='Message'
+            id=''
+            cols={10}
+            rows={20}
+            className='border border-[#C4C4C4] rounded-md p-1 px-5 col-span-2 outline-blue-400'
+          />
+        </form>
+      </section>
+
+      <section className='lg:px-36 lg:py-20 relative h-[440px] '>
+        <Image
+          layout='fill'
+          src='/map.png'
+          alt='Profile Image'
+          // className='rounded-full'
+        />
+      </section>
+
+      <Footer />
     </div>
   )
 }
