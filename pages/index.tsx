@@ -147,7 +147,7 @@ const Home: NextPage = () => {
           Our Team
         </h2>
 
-        <div className='flex flex-row justify-around'>
+        <div className='flex flex-row justify-around '>
           {[
             {name: 'Dr. O. Akinyemi', role: 'Manager, Recruitment'},
             {name: 'Mrs R. Wilson', role: 'Finance'},
@@ -296,6 +296,14 @@ const Home: NextPage = () => {
             rows={20}
             className='border border-[#C4C4C4] rounded-md p-1 px-5 col-span-2 outline-blue-400'
           />
+          <button
+            onClick={e => {
+              e.preventDefault()
+            }}
+            className='bg-[#42B9D1] button  p-2 px-5 tracking-wide text-white rounded-md ml-16 mr-2 col-start-2'
+          >
+            SEND REQUEST
+          </button>
         </form>
       </section>
 

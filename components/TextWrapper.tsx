@@ -7,7 +7,7 @@ type Props = {
 
 function TextWrapper({children, width}: Props) {
   return (
-    <article className={`width`}>
+    <article className={`width text-text-light`}>
       {children}
       <style jsx>{`
         p {
