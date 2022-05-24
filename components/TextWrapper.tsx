@@ -14,7 +14,7 @@ function TextWrapper({children, width}: Props) {
           margin-bottom: 3px;
         }
         .width {
-          width: ${width}px;
+          width: ${width + 10}px;
         }
       `}</style>
     </article>

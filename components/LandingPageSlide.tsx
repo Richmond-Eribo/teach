@@ -26,7 +26,7 @@ function LandingPageSlide({}: Props) {
               className='self-end'
               src='/slides/teacher2 1.png'
               height={742 / 1.3}
-              width={733 / 1.4}
+              width={699 / 1.4}
               // src='/slides/teacher 1.png'
               // height={811 / 1.4}
               // width={733 / 1.4}

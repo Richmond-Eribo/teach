@@ -12,6 +12,9 @@ module.exports = {
       backgroundImage: {
         SignUpRectangle: "url('/SignUpRectangle.png')",
       },
+      fontSize: {
+        '15px': '0.9rem',
+      },
     },
   },
   plugins: [],

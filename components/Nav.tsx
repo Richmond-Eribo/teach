@@ -12,14 +12,14 @@ const Nav = (props: Props) => {
       <div>
         {['About us', 'Services', 'Teachers'].map(Navlink => (
           <Link href='' key={Navlink}>
-            <a className='ml-5'>{Navlink} </a>
+            <a className='ml-6 text-15px'>{Navlink} </a>
           </Link>
         ))}
 
-        <button className='bg-[#42B9D1] button  p-2 px-5 tracking-wide text-white rounded-md ml-16 mr-2'>
+        <button className='bg-[#42B9D1] w-[142px] h-[50px] button text-15px p-2 px-5 tracking-wide text-white rounded-md ml-16 mr-6'>
           SignUp
         </button>
-        <button className='bg-[#42B9D1]/20 text-[#42B9D1] border-2 border-[#42B9D1] button p-2 px-5 tracking-wide  rounded-md'>
+        <button className='bg-[#42B9D1]/20 w-[142px] h-[50px] text-15px text-[#42B9D1] border-2 border-[#42B9D1] button p-2 px-5 tracking-wide  rounded-md'>
           Login
         </button>
       </div>

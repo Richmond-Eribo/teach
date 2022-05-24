@@ -19,25 +19,16 @@ const Home: NextPage = () => {
           About Us
         </h2>
 
-        <div className='flex justify-around'>
-          <div className=''>
-            <Image
-              src='/classroom.png'
-              height={602 / 1.4}
-              width={640 / 1.4}
-              alt='classroom'
-              className='rounded-lg'
-            />
-            <Image
-              src='/learning.png'
-              height={602 / 1.4}
-              width={640 / 1.4}
-              alt='classroom'
-              className='rounded-lg'
-            />
-          </div>
-          <TextWrapper width={700}>
-            <p className='lg:mb-5'>
+        <div className='flex justify-between items-center '>
+          <Image
+            src='/classroom.png'
+            height={400}
+            width={426}
+            alt='classroom'
+            className='rounded-lg'
+          />
+          <TextWrapper width={530}>
+            <p className='lg:mb-5 pt-4'>
               Academic tutors is a business established to provide students at
               all levels of the National Curriculum to receive the appropriate
               help they need to achieve the grades they deserve. We have fully
@@ -61,7 +52,17 @@ const Home: NextPage = () => {
               their choice, from a variety in our list. We ensure our tutors
               follow the UK schools’ curriculum or international Baccalaureate.
             </p>
-
+          </TextWrapper>
+        </div>
+        <div className='flex justify-between items-center my-4'>
+          <Image
+            src='/learning.png'
+            height={400}
+            width={426}
+            alt='classroom'
+            className='rounded-lg'
+          />
+          <TextWrapper width={530}>
             <p className='lg:mb-5'>
               We also ensure that tutors registered with us have both practical
               and industrial experience as well as sound knowledge of the
@@ -100,7 +101,7 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className='lg:px-36 lg:py-20'>
+      <section className='lg:px-36 lg:py-20 bg-[#42B9D1]/5'>
         <h2 className='font-bold lg:text-5xl text-center  text-text-dark mb-20'>
           Services
         </h2>
@@ -109,8 +110,8 @@ const Home: NextPage = () => {
           <div>
             <Image
               src='/services.png'
-              height={602 / 1.4}
-              width={640 / 1.4}
+              height={400}
+              width={426}
               alt='classroom'
               className='rounded-lg'
             />
@@ -142,12 +143,12 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className='lg:px-36 lg:py-20'>
+      <section className='lg:px-36 lg:py-20 bg-[#42B9D1]/5'>
         <h2 className='font-bold lg:text-5xl text-center  text-text-dark mb-20'>
           Our Team
         </h2>
 
-        <div className='flex flex-row justify-around '>
+        <div className='flex flex-row justify-around lg:w-[801px] mx-auto'>
           {[
             {name: 'Dr. O. Akinyemi', role: 'Manager, Recruitment'},
             {name: 'Mrs R. Wilson', role: 'Finance'},
@@ -155,7 +156,7 @@ const Home: NextPage = () => {
           ].map(profile => (
             <figure
               key={profile.name}
-              className='lg:w-[295px] lg:h-[295px] bg-white rounded-xl shadow-lg flex flex-col justify-center items-center '
+              className='lg:w-[247px] lg:h-[295px] bg-white rounded-xl shadow-lg flex flex-col justify-center items-center '
             >
               <Image
                 height={159}
@@ -171,20 +172,20 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className=' lg:px-36 lg:py-20 bg-SignUpRectangle bg-contain bg-no-repeat lg:h-[408px] lg:w-full flex flex-col justify-center '>
-        <div>
-          <h3 className='uppercase text-white font-semibold'>we are hiring</h3>
-          <p className='lg:text-4xl w-[723px] text-white my-3 '>
-            We are currently looking for qualified and unqualified tutors to
-            deliver 1:1 online tutoring in Maths, English and Science.
-          </p>
-          <button className='bg-[#42B9D1] button p-2 px-5 tracking-wide text-white rounded-md '>
-            SignUp
-          </button>
-        </div>
+      <section className=' lg:px-36 lg:py-20 bg-SignUpRectangle bg-contain bg-no-repeat lg:h-[408px] lg:w-full flex flex-col items-center justify-center'>
+        <h3 className='uppercase text-white text-center font-semibold'>
+          we are hiring
+        </h3>
+        <p className='lg:text-4xl w-[723px] text-white text-center my-5 '>
+          We are currently looking for qualified and unqualified tutors to
+          deliver 1:1 online tutoring in Maths, English and Science.
+        </p>
+        <button className='bg-[#D1644D] button tracking-wide  button p-2 px-5  text-white rounded-full '>
+          Sign up today
+        </button>
       </section>
 
-      <section className=' lg:py-20'>
+      <section className=' lg:py-20 bg-[#42B9D1]/5'>
         <h2 className='font-bold lg:text-5xl text-center  text-text-dark mb-20'>
           Some or our experienced teachers
         </h2>
@@ -252,59 +253,58 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className='text-center flex flex-col items-center lg:px-36 lg:py-20'>
-        <h2 className='font-bold lg:text-5xl   text-text-dark mb-10'>
-          Get In Touch
-        </h2>
-        <h2 className='font-bold lg:text-2xl'>Opening Hours</h2>
-        <h2 className='font-bold lg:text-2xl mb-10'>07:30 AM - 05:00 PM</h2>
-
-        <div className='flex flex-col justify-between h-[200px]'>
-          <div>
-            <h4 className='font-bold'>Email</h4>
-            <p>admin@academictutors.org.uk</p>
-          </div>
-          <div>
-            <h4 className='font-bold'>Phone</h4>
-            <p>+44 173 377 0106</p>
-          </div>
-          <div>
-            <h4 className='font-bold'>Address</h4>
-            <p>
-              Academic Tutors Limited Whittlesey, Peterborough PE7, United
-              Kingdom
-            </p>
-          </div>
+      <section className=' bg-[#42B9D1]/5 flex lg:flex-row lg:justify-around flex-col items-start lg:px-36 lg:py-20'>
+        <div className='text-text-light w-[248px] '>
+          <h2 className='font-bold lg:text-4xl   text-text-dark mb-10'>
+            Reach Us
+          </h2>
+          {/* one */}
+          <h4 className='font-bold text-15px'>Address</h4>
+          <p className='text-15px mb-3 '>
+            Academic Tutors Limited Whittlesey, Peterborough PE7, United Kingdom
+          </p>
+          {/* two */}
+          <h4 className='font-bold text-15px'>Contact</h4>
+          <p className='text-15px'>+44 173 377 0106</p>
+          <p className='text-15px mb-3'>admin@academictutors.org.uk</p>
+          {/* three */}
+          <h4 className='font-bold text-15px'>Visit</h4>
+          <h2 className=' text-15px '>07:30 AM - 05:00 PM</h2>
         </div>
 
-        <form className='grid grid-cols-2 gap-2 my-5 lg:w-[700px] lg:h-[200px]'>
-          <input
-            type='text'
-            placeholder='Name'
-            className='border border-[#C4C4C4] rounded-md p-1 px-5 focus:border-blue-500 outline-blue-400'
-          />
-          <input
-            type='email'
-            placeholder='Email'
-            className='border border-[#C4C4C4] rounded-md p-1 px-5 outline-blue-400'
-          />
-          <textarea
-            name='message'
-            placeholder='Message'
-            id=''
-            cols={10}
-            rows={20}
-            className='border border-[#C4C4C4] rounded-md p-1 px-5 col-span-2 outline-blue-400'
-          />
-          <button
-            onClick={e => {
-              e.preventDefault()
-            }}
-            className='bg-[#42B9D1] button  p-2 px-5 tracking-wide text-white rounded-md ml-16 mr-2 col-start-2'
-          >
-            SEND REQUEST
-          </button>
-        </form>
+        <div>
+          <h2 className='font-bold lg:text-4xl   text-text-dark mb-10'>
+            Get in touch
+          </h2>
+          <form className='grid grid-cols-2 gap-2 gap-y-4 my-5 lg:w-[580px] lg:h-[200px]'>
+            <input
+              type='text'
+              placeholder='Name'
+              className='border border-[#C4C4C4] rounded-md p-1 px-5 focus:border-blue-500 outline-blue-400'
+            />
+            <input
+              type='email'
+              placeholder='Email'
+              className='border border-[#C4C4C4] rounded-md p-1 px-5 outline-blue-400'
+            />
+            <textarea
+              name='message'
+              placeholder='Message'
+              id=''
+              cols={10}
+              rows={50}
+              className='border border-[#C4C4C4] rounded-md p-1 px-5 col-span-2 outline-blue-400'
+            />
+            <button
+              onClick={e => {
+                e.preventDefault()
+              }}
+              className='bg-[#42B9D1] button text-15px justify-self-end  p-3 px-5 tracking-wide text-white rounded-md   col-start-2'
+            >
+              SEND REQUEST
+            </button>
+          </form>
+        </div>
       </section>
 
       <section className='lg:px-36 lg:py-20 relative h-[440px] '>
