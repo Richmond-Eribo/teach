@@ -2,19 +2,16 @@ import React, {ReactNode} from 'react'
 
 type Props = {
   children: ReactNode
-  width: number
+  // width: number
 }
 
-function TextWrapper({children, width}: Props) {
+function TextWrapper({children}: Props) {
   return (
-    <article className={`width text-text-light`}>
+    <article className={` text-text-light`}>
       {children}
       <style jsx>{`
         p {
           margin-bottom: 3px;
-        }
-        .width {
-          width: ${width}px;
         }
       `}</style>
     </article>

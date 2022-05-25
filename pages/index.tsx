@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           About Us
         </h2>
 
-        <div className='flex justify-around items-center '>
+        <div className='grid grid-cols-2 gap-28 justify-around items-center '>
           <Image
             src='/classroom.png'
             height={400}
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
             alt='classroom'
             className='rounded-lg'
           />
-          <TextWrapper width={460}>
+          <TextWrapper>
             <p className='lg:mb-5 pt-4'>
               Academic tutors is a business established to provide students at
               all levels of the National Curriculum to receive the appropriate
@@ -54,7 +54,7 @@ const Home: NextPage = () => {
             </p>
           </TextWrapper>
         </div>
-        <div className='flex justify-around items-center my-4'>
+        <div className='grid grid-cols-2 gap-28 justify-around items-center my-4'>
           <Image
             src='/learning.png'
             height={400}
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
             alt='classroom'
             className='rounded-lg'
           />
-          <TextWrapper width={460}>
+          <TextWrapper>
             <p className='lg:mb-5'>
               We also ensure that tutors registered with us have both practical
               and industrial experience as well as sound knowledge of the
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
           Services
         </h2>
 
-        <div className='flex justify-around'>
+        <div className='grid grid-cols-2 gap-28 justify-around'>
           <div>
             <Image
               src='/services.png'
@@ -117,7 +117,7 @@ const Home: NextPage = () => {
             />
           </div>
 
-          <TextWrapper width={460}>
+          <TextWrapper>
             <p className='lg:mb-5'>
               Learning online has put many pupils on course since the start of
               the pandemic. This has helped learners to close the gaps in
@@ -208,7 +208,7 @@ const Home: NextPage = () => {
         </h2>
 
         <div className='flex text-text-light justify-around'>
-          <TextWrapper width={400}>
+          <TextWrapper>
             <p className='mb-5'>
               We are UK based outstanding teachers providing 1st class tuition
               to students all over the world to help them build their future.
@@ -231,7 +231,7 @@ const Home: NextPage = () => {
             </p>
           </TextWrapper>
 
-          <TextWrapper width={300}>
+          <TextWrapper>
             <h4 className='font-bold'>Tuition free countries</h4>
             <ol className='list-disc mb-5 list-inside'>
               <li>Germany</li>
