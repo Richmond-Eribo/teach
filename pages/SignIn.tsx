@@ -50,8 +50,14 @@ const SignIn = (props: Props) => {
             placeholder='Enter your Password'
           />
         </div>
+        <div className='flex lg:w-[420px] justify-between mt-10 text-[#BFC7D3]'>
+          <p>
+            <input type='checkbox' name='remember' /> Remember me
+          </p>
 
-        <button className='button bg-[#42B9D1] lg:w-[420px] mt-10 button text-15px p-2 px-5 tracking-wide text-white rounded-md'>
+          <Link href='/'> Forgot Password?</Link>
+        </div>
+        <button className='button bg-[#42B9D1] lg:w-[420px] mt-5 button text-15px p-2 px-5 tracking-wide text-white rounded-md'>
           sign in
         </button>
         <p className='mt-5'>
