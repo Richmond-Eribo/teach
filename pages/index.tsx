@@ -208,7 +208,7 @@ const Home: NextPage = () => {
         </h2>
 
         <div className='flex text-text-light justify-around'>
-          <TextWrapper>
+          <article className='lg:w-[400px]'>
             <p className='mb-5'>
               We are UK based outstanding teachers providing 1st class tuition
               to students all over the world to help them build their future.
@@ -229,7 +229,7 @@ const Home: NextPage = () => {
               We help students in developing countries gain admission to
               universities in the following countries:
             </p>
-          </TextWrapper>
+          </article>
 
           <TextWrapper>
             <h4 className='font-bold'>Tuition free countries</h4>
