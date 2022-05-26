@@ -9,55 +9,61 @@ type Props = {}
 const SignIn = (props: Props) => {
   const [activeInput, setActiveInput] = useState(0)
   return (
-    <div
-      className='grid grid-cols-2  h-screen'
-      onClick={() => setActiveInput(0)}
-    >
+    <div className='grid grid-cols-2  h-screen'>
       <div className='lg:w-[728px]  relative'>
         <Image src='/SignUpImage2.png' layout='fill' alt='sign up Image' />
       </div>
 
-      <form className='flex flex-col justify-center items-center  h-screen'>
+      <form
+        className='flex flex-col justify-center items-center  h-screen'
+        // onClick={() => setActiveInput(0)}
+      >
         <Image
           src='/logo.png'
           height={42}
           width={305}
           alt='logo'
           className=''
+          priority
         />
 
         {/* Your Name Input section */}
         <div
-          className='flex border-b-2 border-[#BFC7D3] py-2 lg:w-[420px] mt-28'
+          className={`flex border-b-2  py-2 w-full lg:max-w-[420px] mt-28 ${
+            activeInput === 1 ? 'border-blue-500' : 'border-[#BFC7D3]'
+          } `}
           onClick={() => setActiveInput(1)}
         >
-          <Avatar fill='#778CA3' />
+          <Avatar fill={activeInput === 1 ? '#3b82f6' : '#BFC7D3'} />
           <input
             type='text'
             className='ml-3 w-full border-0 outline-none'
             placeholder='Enter your Username'
+            onClick={() => setActiveInput(1)}
           />
         </div>
         {/* Your Password Section */}
         <div
-          className='flex border-b-2 border-[#BFC7D3] py-2 lg:w-[420px] mt-10'
-          onClick={() => setActiveInput(1)}
+          className={`flex border-b-2  py-2 w-full lg:max-w-[420px] mt-10 ${
+            activeInput === 2 ? 'border-blue-500  ' : 'border-[#BFC7D3]'
+          } `}
+          onClick={() => setActiveInput(2)}
         >
-          <PasswordIcon fill='#778CA3' />
+          <PasswordIcon fill={activeInput === 2 ? '#3b82f6' : '#BFC7D3'} />
           <input
             type='text'
             className='ml-3 w-full border-0 outline-none'
             placeholder='Enter your Password'
           />
         </div>
-        <div className='flex lg:w-[420px] justify-between mt-10 text-[#BFC7D3]'>
+        <div className='flex lg:max-w-[420px] w-full justify-between mt-10 text-[#BFC7D3]'>
           <p>
             <input type='checkbox' name='remember' /> Remember me
           </p>
 
           <Link href='/'> Forgot Password?</Link>
         </div>
-        <button className='button bg-[#42B9D1] lg:w-[420px] mt-5 button text-15px p-2 px-5 tracking-wide text-white rounded-md'>
+        <button className='button bg-[#42B9D1] w-full lg:max-w-[420px] mt-5 button text-15px p-2 px-5 tracking-wide text-white rounded-md'>
           sign in
         </button>
         <p className='mt-5'>
