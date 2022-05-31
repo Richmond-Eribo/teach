@@ -151,7 +151,7 @@ const Home: NextPage = () => {
           ].map(profile => (
             <figure
               key={profile.name}
-              className=' w-[287px] h-[295px] bg-white rounded-xl shadow-lg flex flex-col justify-center items-center '
+              className=' w-[287px] h-[295px] bg-white rounded-xl shadow-lg flex flex-col justify-center items-center  text-center '
             >
               <Image
                 height={159}
@@ -160,7 +160,7 @@ const Home: NextPage = () => {
                 alt='Profile Image'
                 className='rounded-full'
               />
-              <h3 className='font-bold lg:mt-4'>{profile.name}</h3>
+              <h3 className='font-bold mt-4 w-32 '>{profile.name}</h3>
               <figcaption>{profile.role} </figcaption>
             </figure>
           ))}
