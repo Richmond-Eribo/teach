@@ -9,17 +9,15 @@ import TextWrapper from '../components/TextWrapper'
 const Home: NextPage = () => {
   return (
     <div className=''>
-      <section className='h-screen bg-[#D1644D]/5 lg:px-10 lg:pt-10'>
+      <section className=' px-4 pt-8 bg-[#D1644D]/5 lg:px-10 lg:pt-10'>
         <Nav />
         <LandingPageSlide />
       </section>
 
-      <section className='lg:px-36 lg:py-20'>
-        <h2 className='font-bold lg:text-5xl text-center  text-text-dark mb-20'>
-          About Us
-        </h2>
+      <section className='px-4 py-10 lg:px-36 lg:py-20'>
+        <h2 className='heading-1'>About Us</h2>
 
-        <div className='grid grid-cols-2 gap-28 justify-around items-center '>
+        <div className='grid grid-cols-1  grid-rows-1  lg:grid-cols-2 lg:gap-28 justify-around items-center '>
           <Image
             src='/classroom.png'
             height={400}
@@ -28,7 +26,7 @@ const Home: NextPage = () => {
             className='rounded-lg'
           />
           <TextWrapper>
-            <p className='lg:mb-5 pt-4'>
+            <p className='mb-5  pt-4'>
               Academic tutors is a business established to provide students at
               all levels of the National Curriculum to receive the appropriate
               help they need to achieve the grades they deserve. We have fully
@@ -37,7 +35,7 @@ const Home: NextPage = () => {
               interest at affordable price to parents or guardians.
             </p>
 
-            <p className='lg:mb-5'>
+            <p className='mb-5'>
               We ensure that students taking tuition from our teachers are
               safeguarded. This is why we invest in Bramble Education, where
               lessons are automatically recorded for all parties to be able to
@@ -45,7 +43,7 @@ const Home: NextPage = () => {
               students where each session lasts for an hour.
             </p>
 
-            <p className='lg:mb-5'>
+            <p className='mb-5'>
               In some cases, our tutors do offer face to face tuition, depending
               on the need of some parents as well as the willingness of the
               tutor. Parents will have the possibility to select the tutor of
@@ -54,7 +52,8 @@ const Home: NextPage = () => {
             </p>
           </TextWrapper>
         </div>
-        <div className='grid grid-cols-2 gap-28 justify-around items-center my-4'>
+
+        <div className='grid grid-cols-1  grid-rows-1 my-10  lg:grid-cols-2 lg:gap-28 justify-around items-center '>
           <Image
             src='/learning.png'
             height={400}
@@ -63,13 +62,13 @@ const Home: NextPage = () => {
             className='rounded-lg'
           />
           <TextWrapper>
-            <p className='lg:mb-5'>
+            <p className='mb-5 pt-4'>
               We also ensure that tutors registered with us have both practical
               and industrial experience as well as sound knowledge of the
               subject registered for.
             </p>
 
-            <p className='lg:mb-5'>
+            <p className='mb-5'>
               Academic tutors are independent educators committed to the
               actualization of students’ goals.{' '}
               <strong>
@@ -78,19 +77,19 @@ const Home: NextPage = () => {
               </strong>
             </p>
 
-            <p className='lg:mb-5'>
+            <p className='mb-5'>
               If you are unable to find the tutor of your choice on our website,
               contact us and inform us of the subject (s) you are interested in,
               we would link you with the appropriate tutor (s).
             </p>
 
-            <p className='lg:mb-5'>
+            <p className='mb-5'>
               We also provide 11 plus examination lessons to progress your child
               into a Grammar School or Private School. Get in touch and we are
               here to help.
             </p>
 
-            <p className='lg:mb-5'>
+            <p className=''>
               <strong>
                 The tutoring fee starts from as little as £16 per hour.
               </strong>
@@ -101,12 +100,10 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className='lg:px-36 lg:py-20 bg-[#42B9D1]/5'>
-        <h2 className='font-bold lg:text-5xl text-center  text-text-dark mb-20'>
-          Services
-        </h2>
+      <section className='lg:px-36 px-4 py-10 lg:py-20 bg-[#42B9D1]/5'>
+        <h2 className='heading-1'>Services</h2>
 
-        <div className='grid grid-cols-2 gap-28 justify-around'>
+        <div className='grid grid-cols-1  grid-rows-1 my-10  lg:grid-cols-2 lg:gap-28 justify-around items-center'>
           <div>
             <Image
               src='/services.png'
@@ -118,7 +115,7 @@ const Home: NextPage = () => {
           </div>
 
           <TextWrapper>
-            <p className='lg:mb-5'>
+            <p className='mb-5 pt-4'>
               Learning online has put many pupils on course since the start of
               the pandemic. This has helped learners to close the gaps in
               learning and widen their knowledge with the help of expertise from
@@ -128,12 +125,12 @@ const Home: NextPage = () => {
               it on from there to support your child at every step the way
               towards the attainment of better grades
             </p>
-            <p className='lg:mb-5'>
+            <p className='mb-5'>
               Maths, English, and Science are compulsory subjects taught all
               over the world at all key stages. Our teachers provide their
               expertise in many subject areas such as:
             </p>
-            <p className='lg:mb-5'>
+            <p className=''>
               Primary English | Secondary English | Primary Maths | Secondary
               Maths | Combined Science | Physics | Chemistry | Biology | French
               | Spanish | Geography | German | History | Yoruba | Hausa | Igbo |
@@ -143,12 +140,10 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className='lg:px-36 lg:py-20 bg-[#42B9D1]/5'>
-        <h2 className='font-bold lg:text-5xl text-center  text-text-dark mb-20'>
-          Our Team
-        </h2>
+      <section className='lg:px-36  py-10 bg-[#42B9D1]/5'>
+        <h2 className='heading-1'>Our Team</h2>
 
-        <div className='flex flex-row justify-around lg:w-[801px] mx-auto'>
+        <div className='flex  h-[930px] lg:h-[300px]  items-center flex-col lg:flex-row justify-around  mx-auto'>
           {[
             {name: 'Dr. O. Akinyemi', role: 'Manager, Recruitment'},
             {name: 'Mrs R. Wilson', role: 'Finance'},
@@ -156,7 +151,7 @@ const Home: NextPage = () => {
           ].map(profile => (
             <figure
               key={profile.name}
-              className='lg:w-[247px] lg:h-[295px] bg-white rounded-xl shadow-lg flex flex-col justify-center items-center '
+              className=' w-[287px] h-[295px] bg-white rounded-xl shadow-lg flex flex-col justify-center items-center '
             >
               <Image
                 height={159}
@@ -172,11 +167,11 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className=' lg:px-36 lg:py-20 bg-SignUpRectangle bg-contain bg-no-repeat lg:h-[408px] lg:w-full flex flex-col items-center justify-center'>
-        <h3 className='uppercase text-white text-center font-semibold'>
+      <section className=' h-[260px] px-4 lg:px-36 py-10  bg bg-contain bg-no-repeat lg:h-[408px]  flex flex-col items-center justify-center'>
+        <h3 className='uppercase  w-[200px] text-white text-center font-semibold'>
           we are hiring
         </h3>
-        <p className='lg:text-4xl w-[723px] text-white text-center my-5 '>
+        <p className='lg:text-4xl lg:w-[723px] text-white text-center my-5 '>
           We are currently looking for qualified and unqualified tutors to
           deliver 1:1 online tutoring in Maths, English and Science.
         </p>
@@ -185,15 +180,12 @@ const Home: NextPage = () => {
         </button>
       </section>
 
-      <section className=' lg:py-20 bg-[#42B9D1]/5'>
-        <h2 className='font-bold lg:text-5xl text-center  text-text-dark mb-20'>
-          Some or our experienced teachers
-        </h2>
+      <section className=' hidden lg:block py-10 bg-[#42B9D1]/5'>
+        <h2 className='heading-1'>Some or our experienced teachers</h2>
         <ProfileSlider />
-        {/* hy */}
       </section>
 
-      <section className='lg:px-36 lg:py-20 relative h-[440px] '>
+      <section className='lg:px-36 py-10 relative h-[180px] lg:h-[440px] '>
         <Image
           layout='fill'
           src='/uni.png'
@@ -202,12 +194,10 @@ const Home: NextPage = () => {
         />
       </section>
 
-      <section className='lg:px-36 lg:py-20'>
-        <h2 className='font-bold lg:text-5xl text-center  text-text-dark mb-20'>
-          University Admission Assist
-        </h2>
+      <section className='lg:px-36 px-4 py-10'>
+        <h2 className='heading-1'>University Admission Assist</h2>
 
-        <div className='flex text-text-light justify-around'>
+        <div className='flex flex-col lg:flex-row text-text-light justify-around'>
           <article className='lg:w-[400px]'>
             <p className='mb-5'>
               We are UK based outstanding teachers providing 1st class tuition
@@ -253,30 +243,27 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className=' bg-[#42B9D1]/5 flex lg:flex-row lg:justify-around flex-col items-start lg:px-36 lg:py-20'>
-        <div className='text-text-light w-[248px] '>
-          <h2 className='font-bold lg:text-4xl   text-text-dark mb-10'>
+      <section className=' bg-[#42B9D1]/5 flex lg:flex-row lg:justify-around flex-col items-start px-4 lg:px-36 py-10'>
+        <div className='text-text-light w-[248px] mb-10'>
+          <h2 className='font-bold lg:text-4xl text-[35px]  text-text-dark lg:mb-10'>
             Reach Us
           </h2>
-          {/* one */}
           <h4 className='font-bold text-15px'>Address</h4>
           <p className='text-15px mb-3 '>
             Academic Tutors Limited Whittlesey, Peterborough PE7, United Kingdom
           </p>
-          {/* two */}
           <h4 className='font-bold text-15px'>Contact</h4>
           <p className='text-15px'>+44 173 377 0106</p>
           <p className='text-15px mb-3'>admin@academictutors.org.uk</p>
-          {/* three */}
           <h4 className='font-bold text-15px'>Visit</h4>
           <h2 className=' text-15px '>07:30 AM - 05:00 PM</h2>
         </div>
 
         <div>
-          <h2 className='font-bold lg:text-4xl   text-text-dark mb-10'>
+          <h2 className='font-bold lg:text-4xl text-[35px]   text-text-dark lg:mb-10'>
             Get in touch
           </h2>
-          <form className='grid grid-cols-2 gap-2 gap-y-4 my-5 lg:w-[580px] lg:h-[200px]'>
+          <form className='grid grid-cols-2 gap-2 gap-y-4 lg:my-5 lg:w-[580px] lg:h-[200px]'>
             <input
               type='text'
               placeholder='Name'
@@ -317,6 +304,18 @@ const Home: NextPage = () => {
       </section>
 
       <Footer />
+
+      <style jsx>
+        {`
+          .bg {
+            background: linear-gradient(
+              259.62deg,
+              #42b9d1 17.24%,
+              #197385 71.78%
+            );
+          }
+        `}
+      </style>
     </div>
   )
 }

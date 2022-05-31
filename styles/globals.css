@@ -12,4 +12,7 @@
   .button {
     @apply uppercase font-semibold text-center;
   }
+  .heading-1 {
+    @apply font-bold  md:text-[text-45px] lg:text-5xl text-[30px] text-center  text-text-dark lg:mb-20 mb-10;
+  }
 }
