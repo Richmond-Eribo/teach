@@ -263,7 +263,7 @@ const Home: NextPage = () => {
           <h2 className='font-bold lg:text-4xl text-[35px]   text-text-dark lg:mb-10'>
             Get in touch
           </h2>
-          <form className='grid grid-cols-2 gap-2 gap-y-4 lg:my-5 lg:w-[580px] lg:h-[200px]'>
+          <form className=' w-[330px] flex flex-col  lg:grid   lg:grid-cols-2 gap-2 lg:gap-y-4 lg:my-5 lg:w-[580px] lg:h-[200px]'>
             <input
               type='text'
               placeholder='Name'
@@ -280,7 +280,7 @@ const Home: NextPage = () => {
               id=''
               cols={10}
               rows={5}
-              className='border border-[#C4C4C4] rounded-md p-1 px-5 col-span-2 outline-blue-400'
+              className='border border-[#C4C4C4] rounded-md p-1 px-5 lg:col-span-2 outline-blue-400'
             />
             <button
               onClick={e => {
