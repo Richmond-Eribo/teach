@@ -63,9 +63,7 @@ const SignIn = (props: Props) => {
 
           <Link href='/'> Forgot Password?</Link>
         </div>
-        <button className='button bg-[#42B9D1] w-full lg:max-w-[420px] mt-5 button text-15px p-2 px-5 tracking-wide text-white rounded-md'>
-          sign in
-        </button>
+        <button className='button sign-button '>sign in</button>
         <p className='mt-5'>
           New on our platform?{' '}
           <Link href='/'>
