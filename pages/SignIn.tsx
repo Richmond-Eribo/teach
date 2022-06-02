@@ -54,7 +54,7 @@ const SignIn = (props: Props) => {
           <Avatar fill={activeInput === 1 ? '#3b82f6' : '#BFC7D3'} />
           <input
             type='text'
-            className='ml-3 w-full border-0 outline-none'
+            className='ml-3 w-full border-0 outline-none text-sm lg:text-base'
             placeholder='Enter your Username'
             onClick={() => setActiveInput(1)}
           />
@@ -69,7 +69,7 @@ const SignIn = (props: Props) => {
           <PasswordIcon fill={activeInput === 2 ? '#3b82f6' : '#BFC7D3'} />
           <input
             type='text'
-            className='ml-3 w-full border-0 outline-none'
+            className='ml-3 w-full border-0 outline-none text-sm lg:text-base'
             placeholder='Enter your Password'
           />
         </div>
