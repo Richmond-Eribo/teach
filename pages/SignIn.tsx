@@ -9,7 +9,7 @@ type Props = {}
 const SignIn = (props: Props) => {
   const [activeInput, setActiveInput] = useState(0)
   return (
-    <div className='lg:grid lg:grid-cols-2 px-4 lg:px-0 md:px-10  h-screen'>
+    <div className='lg:grid lg:grid-cols-2 px-7 lg:px-0 md:px-10  h-screen'>
       <div className='lg:w-[728px] hidden lg:block  relative'>
         <Image src='/SignUpImage2.png' layout='fill' alt='sign up Image' />
       </div>
