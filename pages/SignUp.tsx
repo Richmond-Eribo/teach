@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Image from 'next/image'
 import SignUpParent from '../components/SignUpParent'
 import SignUpTeacher from '../components/SignUpTeacher'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -10,14 +11,18 @@ const SignUp = (props: Props) => {
   return (
     <div className='py-10 px-4'>
       <figure className='w-[310px] mx-auto'>
-        <Image
-          src='/logo.png'
-          height={42}
-          width={305}
-          alt='logo'
-          className=''
-          priority
-        />
+        <Link href='/'>
+          <a>
+            <Image
+              src='/logo.png'
+              height={42}
+              width={305}
+              alt='logo'
+              className=''
+              priority
+            />
+          </a>
+        </Link>
       </figure>
 
       <div className='flex justify-center my-5 '>
