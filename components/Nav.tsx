@@ -8,7 +8,7 @@ const Nav = (props: Props) => {
   const [menuOpen, setMenuOpen] = useState(false)
   return (
     <>
-      <div className='flex  lg:flex-row justify-between items-center pb-4 px-2  md:pb-8 md:px-5 lg:pb-10 lg:px-10'>
+      <div className='flex  lg:flex-row justify-between  items-center pb-4 px-2  md:pb-8 md:px-5 lg:pb-10 lg:px-10'>
         {/* logo */}
 
         <figure className='pt-1 '>
@@ -21,6 +21,8 @@ const Nav = (props: Props) => {
         </figure>
 
         {/* logo end */}
+
+        {/* hamburger menu */}
         <div
           className='lg:hidden  rounded shadow-md p-1'
           onClick={() => setMenuOpen(current => !current)}
@@ -58,6 +60,7 @@ const Nav = (props: Props) => {
           </svg>
         </div>
 
+        {/* Nav links for laptop */}
         <div className=' hidden flex-col lg:block'>
           {['About us', 'Services', 'Teachers'].map(Navlink => (
             <a
@@ -82,6 +85,7 @@ const Nav = (props: Props) => {
         </div>
       </div>
 
+      {/* nav links for mobile */}
       <div
         className={`grid  grid-cols-1 gap-2 place-items-center  lg:hidden ${
           menuOpen ? 'h-32 ' : 'invisible h-0'
@@ -89,16 +93,21 @@ const Nav = (props: Props) => {
       >
         {['About us', 'Services'].map(Navlink => (
           <Link href='' key={Navlink}>
-            <a className='lg:ml-6 md:ml-3 text-15px text-center'>{Navlink} </a>
+            <a className='lg:ml-6 md:ml-3  text-center'>{Navlink} </a>
           </Link>
         ))}
 
-        <button className='bg-[#42B9D1]  w-[120px] h-[35px]  button text-15px  tracking-wide text-white rounded-md  '>
-          <Link href='/SignUp'>SignUp</Link>
-        </button>
-        <button className='bg-[#42B9D1]/20 w-[120px] h-[35px]  text-15px text-[#42B9D1] border-2 border-[#42B9D1] button  tracking-wide  rounded-md'>
-          <Link href='/SignIn'>Login</Link>
-        </button>
+        <Link href='/SignUp'>
+          <button className='bg-[#42B9D1]  w-[120px] h-[35px]  button text-15px  tracking-wide text-white rounded-md  '>
+            SignUp
+          </button>
+        </Link>
+
+        <Link href='/SignIn'>
+          <button className='bg-[#42B9D1]/20 w-[120px] h-[35px]  text-15px text-[#42B9D1] border-2 border-[#42B9D1] button  tracking-wide  rounded-md'>
+            Login
+          </button>
+        </Link>
       </div>
     </>
   )
