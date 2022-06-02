@@ -33,7 +33,7 @@ const SignIn = (props: Props) => {
 
         {/* Your Name Input section */}
         <div
-          className={`flex border-b-2  py-2 w-full lg:max-w-[420px] mt-28 ${
+          className={`flex border-b-2  py-2 w-full lg:max-w-[420px] mt-10 lg:mt-28 ${
             activeInput === 1 ? 'border-blue-500' : 'border-[#BFC7D3]'
           } `}
           onClick={() => setActiveInput(1)}
