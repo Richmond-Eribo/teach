@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <LandingPageSlide />
       </section>
 
-      <section className='px-4 py-10 lg:px-36 lg:py-20'>
+      <section className='px-4 py-10 lg:px-36 lg:py-20' id='About us'>
         <h2 className='heading-1'>About Us</h2>
 
         <div className='grid grid-cols-1  grid-rows-1  lg:grid-cols-2 lg:gap-28 justify-around items-center '>
@@ -100,7 +100,10 @@ const Home: NextPage = () => {
         </div>
       </section>
 
-      <section className='lg:px-36 px-4 py-10 lg:py-20 bg-[#42B9D1]/5'>
+      <section
+        className='lg:px-36 px-4 py-10 lg:py-20 bg-[#42B9D1]/5'
+        id='Services'
+      >
         <h2 className='heading-1'>Services</h2>
 
         <div className='grid grid-cols-1  grid-rows-1 my-10  lg:grid-cols-2 lg:gap-28 justify-around items-center'>
@@ -180,7 +183,7 @@ const Home: NextPage = () => {
         </button>
       </section>
 
-      <section className=' hidden lg:block py-10 bg-[#42B9D1]/5'>
+      <section className=' hidden lg:block py-10 bg-[#42B9D1]/5' id='Teachers'>
         <h2 className='heading-1'>Some or our experienced teachers</h2>
         <ProfileSlider />
       </section>
