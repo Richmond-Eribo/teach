@@ -18,14 +18,18 @@ const SignIn = (props: Props) => {
         className='flex flex-col justify-center items-center  h-screen'
         // onClick={() => setActiveInput(0)}
       >
-        <Image
-          src='/logo.png'
-          height={42}
-          width={305}
-          alt='logo'
-          className=''
-          priority
-        />
+        <Link href='/'>
+          <a>
+            <Image
+              src='/logo.png'
+              height={42}
+              width={305}
+              alt='logo'
+              className=''
+              priority
+            />
+          </a>
+        </Link>
 
         {/* Your Name Input section */}
         <div
