@@ -70,13 +70,11 @@ const Nav = (props: Props) => {
           ))}
 
           <button className='bg-[#42B9D1] md:w-[120px] md:h-[35px]  button text-15px md:px-4 lg:px-5 tracking-wide text-white rounded-md md:ml-10 md:mr-4 lg:ml-16 lg:mr-6'>
-            SignUp
+            <Link href='/SignUp'>SignUp</Link>
           </button>
-          <Link href='/SignIn'>
-            <button className='bg-[#42B9D1]/20 md:w-[120px] md:h-[35px]  text-15px text-[#42B9D1] border-2 border-[#42B9D1] button  md:px-4 lg:px-5 tracking-wide  rounded-md'>
-              Login
-            </button>
-          </Link>
+          <button className='bg-[#42B9D1]/20 md:w-[120px] md:h-[35px]  text-15px text-[#42B9D1] border-2 border-[#42B9D1] button  md:px-4 lg:px-5 tracking-wide  rounded-md'>
+            <Link href='/SignIn'>Login</Link>
+          </button>
         </div>
       </div>
 
