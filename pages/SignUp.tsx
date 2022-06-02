@@ -12,16 +12,29 @@ const SignUp = (props: Props) => {
     <div className='py-10 px-4'>
       <figure className='w-[310px] mx-auto'>
         <Link href='/'>
-          <a>
-            <Image
-              src='/logo.png'
-              height={42}
-              width={305}
-              alt='logo'
-              className=''
-              priority
-            />
-          </a>
+          <>
+            <a className='hidden lg:block'>
+              <Image
+                src='/logo.png'
+                height={42}
+                width={305}
+                alt='logo'
+                className=''
+                priority
+              />
+            </a>
+
+            <a className='block lg:hidden'>
+              <Image
+                src='/logo.png'
+                height={42 / 1.2}
+                width={305 / 1.2}
+                alt='logo'
+                className=''
+                priority
+              />
+            </a>
+          </>
         </Link>
       </figure>
 
