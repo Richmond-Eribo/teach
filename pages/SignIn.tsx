@@ -74,14 +74,16 @@ const SignIn = (props: Props) => {
           />
         </div>
         <div className='flex lg:max-w-[420px] w-full justify-between mt-10 text-[#BFC7D3]'>
-          <p>
+          <p className='text-sm lg:text-base'>
             <input type='checkbox' name='remember' /> Remember me
           </p>
 
-          <Link href='/'> Forgot Password?</Link>
+          <Link href='/'>
+            <a className='text-sm lg:text-base'> Forgot Password? </a>
+          </Link>
         </div>
         <button className='button sign-button '>sign in</button>
-        <p className='mt-5'>
+        <p className='mt-5 text-sm lg:text-base'>
           New on our platform?{' '}
           <Link href='/'>
             <a className='text-[#42B9D1] '>Create an account</a>
